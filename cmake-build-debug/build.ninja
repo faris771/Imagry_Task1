@@ -73,6 +73,60 @@ build CMakeFiles/CPU.dir/ROM.cpp.o: CXX_COMPILER__CPU_unscanned_Debug /home/fari
   OBJECT_DIR = CMakeFiles/CPU.dir
   OBJECT_FILE_DIR = CMakeFiles/CPU.dir
 
+build CMakeFiles/CPU.dir/CPU.cpp.o: CXX_COMPILER__CPU_unscanned_Debug /home/faris/CLionProjects/CPU/CPU.cpp || cmake_object_order_depends_target_CPU
+  DEP_FILE = CMakeFiles/CPU.dir/CPU.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/CPU.dir
+  OBJECT_FILE_DIR = CMakeFiles/CPU.dir
+
+build CMakeFiles/CPU.dir/instruction.cpp.o: CXX_COMPILER__CPU_unscanned_Debug /home/faris/CLionProjects/CPU/instruction.cpp || cmake_object_order_depends_target_CPU
+  DEP_FILE = CMakeFiles/CPU.dir/instruction.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/CPU.dir
+  OBJECT_FILE_DIR = CMakeFiles/CPU.dir
+
+build CMakeFiles/CPU.dir/Add.cpp.o: CXX_COMPILER__CPU_unscanned_Debug /home/faris/CLionProjects/CPU/Add.cpp || cmake_object_order_depends_target_CPU
+  DEP_FILE = CMakeFiles/CPU.dir/Add.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/CPU.dir
+  OBJECT_FILE_DIR = CMakeFiles/CPU.dir
+
+build CMakeFiles/CPU.dir/SetMemory.cpp.o: CXX_COMPILER__CPU_unscanned_Debug /home/faris/CLionProjects/CPU/SetMemory.cpp || cmake_object_order_depends_target_CPU
+  DEP_FILE = CMakeFiles/CPU.dir/SetMemory.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/CPU.dir
+  OBJECT_FILE_DIR = CMakeFiles/CPU.dir
+
+build CMakeFiles/CPU.dir/Add_I.cpp.o: CXX_COMPILER__CPU_unscanned_Debug /home/faris/CLionProjects/CPU/Add_I.cpp || cmake_object_order_depends_target_CPU
+  DEP_FILE = CMakeFiles/CPU.dir/Add_I.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/CPU.dir
+  OBJECT_FILE_DIR = CMakeFiles/CPU.dir
+
+build CMakeFiles/CPU.dir/Jump.cpp.o: CXX_COMPILER__CPU_unscanned_Debug /home/faris/CLionProjects/CPU/Jump.cpp || cmake_object_order_depends_target_CPU
+  DEP_FILE = CMakeFiles/CPU.dir/Jump.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/CPU.dir
+  OBJECT_FILE_DIR = CMakeFiles/CPU.dir
+
+build CMakeFiles/CPU.dir/Exit.cpp.o: CXX_COMPILER__CPU_unscanned_Debug /home/faris/CLionProjects/CPU/Exit.cpp || cmake_object_order_depends_target_CPU
+  DEP_FILE = CMakeFiles/CPU.dir/Exit.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/CPU.dir
+  OBJECT_FILE_DIR = CMakeFiles/CPU.dir
+
+build CMakeFiles/CPU.dir/Print.cpp.o: CXX_COMPILER__CPU_unscanned_Debug /home/faris/CLionProjects/CPU/Print.cpp || cmake_object_order_depends_target_CPU
+  DEP_FILE = CMakeFiles/CPU.dir/Print.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/CPU.dir
+  OBJECT_FILE_DIR = CMakeFiles/CPU.dir
+
+build CMakeFiles/CPU.dir/test.cpp.o: CXX_COMPILER__CPU_unscanned_Debug /home/faris/CLionProjects/CPU/test.cpp || cmake_object_order_depends_target_CPU
+  DEP_FILE = CMakeFiles/CPU.dir/test.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/CPU.dir
+  OBJECT_FILE_DIR = CMakeFiles/CPU.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target CPU
@@ -81,7 +135,7 @@ build CMakeFiles/CPU.dir/ROM.cpp.o: CXX_COMPILER__CPU_unscanned_Debug /home/fari
 #############################################
 # Link the executable CPU
 
-build CPU: CXX_EXECUTABLE_LINKER__CPU_Debug CMakeFiles/CPU.dir/main.cpp.o CMakeFiles/CPU.dir/memory.cpp.o CMakeFiles/CPU.dir/RAM.cpp.o CMakeFiles/CPU.dir/ROM.cpp.o
+build CPU: CXX_EXECUTABLE_LINKER__CPU_Debug CMakeFiles/CPU.dir/main.cpp.o CMakeFiles/CPU.dir/memory.cpp.o CMakeFiles/CPU.dir/RAM.cpp.o CMakeFiles/CPU.dir/ROM.cpp.o CMakeFiles/CPU.dir/CPU.cpp.o CMakeFiles/CPU.dir/instruction.cpp.o CMakeFiles/CPU.dir/Add.cpp.o CMakeFiles/CPU.dir/SetMemory.cpp.o CMakeFiles/CPU.dir/Add_I.cpp.o CMakeFiles/CPU.dir/Jump.cpp.o CMakeFiles/CPU.dir/Exit.cpp.o CMakeFiles/CPU.dir/Print.cpp.o CMakeFiles/CPU.dir/test.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/CPU.dir
   POST_BUILD = :

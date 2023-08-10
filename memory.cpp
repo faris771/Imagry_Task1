@@ -7,6 +7,7 @@
 
 
 Memory::Memory(int memorySize, std::vector<std::string> memoryVector) {
+
     this->memorySize = memorySize;
     this->memoryVector = memoryVector;
     this->memoryVector.resize(memorySize);

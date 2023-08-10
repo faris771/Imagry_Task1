@@ -5,7 +5,7 @@
 #include <string>
 #include "RAM.h"
 
-RAM::RAM(int memorySize, std::vector<std::string> memoryVector) : Memory(memorySize, memoryVector) {
+RAM::RAM(int memorySize, std::vector<std::string> memoryVector) : Memory(memorySize, memoryVector)      {
     // ':' super-like
 
 }
