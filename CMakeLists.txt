@@ -11,4 +11,19 @@ add_executable(CPU main.cpp
         instruction.h
         memory.cpp
         RAM.cpp
-        ROM.cpp)
+        ROM.cpp
+        CPU.cpp
+        instruction.cpp
+        Add.cpp
+        Add.h
+        SetMemory.cpp
+        SetMemory.h
+        Add_I.cpp
+        Add_I.h
+        Jump.cpp
+        Jump.h
+        Exit.cpp
+        Exit.h
+        Print.cpp
+        Print.h
+        test.cpp)
