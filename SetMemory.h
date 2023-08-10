@@ -1,8 +1,17 @@
-//
-// Created by faris on 8/9/23.
-//
 
-#ifndef CPU_SETMEMORY_H
-#define CPU_SETMEMORY_H
+#pragma once
 
-#endif //CPU_SETMEMORY_H
+#include <iostream>
+#include "instruction.h"
+
+
+class SetMemory : public Instruction {
+
+
+
+public:
+
+    void exec() override;
+
+
+};
