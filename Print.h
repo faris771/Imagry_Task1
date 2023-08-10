@@ -4,14 +4,12 @@
 
 
 #pragma once
+
 #include <iostream>
 #include "instruction.h"
 
 
-
-
-
-class Print: public Instruction{
+class Print : public Instruction {
 
 
 public:

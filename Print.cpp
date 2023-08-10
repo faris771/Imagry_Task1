@@ -13,7 +13,7 @@
 void Print::exec() { // PRINT 5
 
 
-    std::cout << this->memory->getIndexValue(std::stoi(this->instructionVector[1])) << std::endl; // print value at index in the mempory
+    std::cout << this->ram->getIndexValue(std::stoi(this->instructionVector[1])) << std::endl; // print value at index in the mempory
 
 
 

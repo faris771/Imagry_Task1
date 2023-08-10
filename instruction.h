@@ -9,6 +9,7 @@
 #include <memory>
 #include <vector>
 #include "memory.h"
+#include "CPU.h"
 
 
 class Instruction {
@@ -20,11 +21,11 @@ private:
 
 public:
 
+    Instruction(std::shared_ptr<RAM> ram, std::string instructionString);
     std::vector<std::string> instructionVector;
-    std::shared_ptr<Memory> memory = std::make_shared<Memory>();
-    Instruction(std::shared_ptr<Memory> memory,std::string instructionString);
+    std::shared_ptr<RAM> ram = std::make_shared<RAM>();
 
-    virtual void exec() = 0;
+    virtual void exec();
 
 
 };

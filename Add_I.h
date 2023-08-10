@@ -1,8 +1,17 @@
 //
 // Created by faris on 8/9/23.
 //
+#pragma once
+#include <iostream>
+#include "instruction.h"
 
-#ifndef CPU_ADD_I_H
-#define CPU_ADD_I_H
 
-#endif //CPU_ADD_I_H
+class Add_I : public Instruction {
+
+
+public:
+
+    void exec() override;
+
+
+};

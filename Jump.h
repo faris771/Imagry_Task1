@@ -1,8 +1,18 @@
 //
 // Created by faris on 8/9/23.
 //
+#pragma once
 
-#ifndef CPU_JUMP_H
-#define CPU_JUMP_H
 
-#endif //CPU_JUMP_H
+
+class Jump{
+
+public:
+
+    void exec();
+
+
+
+
+
+};
