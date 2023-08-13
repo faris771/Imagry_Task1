@@ -11,7 +11,14 @@
 class RAM :public Memory {
 
 public:
-    RAM(int memorySize, std::vector<std::string> memoryVector);
+    RAM(int memorySize, std::vector<std::string> memoryVector) : Memory(memorySize, memoryVector) {
+
+        // ':' super-like
+
+    }
+
+
+
     void setValueToIndex(std::string value, int index);
 
 };

@@ -15,7 +15,7 @@ Memory::Memory(int memorySize, std::vector<std::string> memoryVector) {
 }
 
 std::string Memory::getIndexValue(int index) {
-    if (index > this->memorySize || index < 0) {
+    if (index >= this->memorySize || index < 0) {
 
         std::cout << "INDEX OUT OF BOUND";
         return "!!!";

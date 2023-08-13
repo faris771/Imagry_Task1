@@ -38,9 +38,9 @@ void CPU::fetchData() {
 
     while (std::getline(instructionsReadFile, currentInstruction)) {
         fileContents.emplace_back(currentInstruction);
-//        std::cout << currentInstruction << std::endl;
     }
     instructionsReadFile.close();
+
     std::vector<std::string> RAM_Data = {"0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0"};
 
     this->rom = std::make_shared<ROM>(fileContents.size(), fileContents);
@@ -80,7 +80,6 @@ void CPU::run() {
 
         } else if (instructionName == "SET") {
             currentInstruction = std::make_shared<SetMemory>(ram, currentLine);
-
         } else {
             std::cout << "Invalid Instruction" << std::endl;
             exit(1);

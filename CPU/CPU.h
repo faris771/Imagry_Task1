@@ -23,7 +23,5 @@ public:
     void fetchData();
     void run();
 
-    friend class Jump;
-
 
 };
