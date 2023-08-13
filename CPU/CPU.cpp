@@ -82,10 +82,13 @@ void CPU::run() {
             currentInstruction = std::make_shared<SetMemory>(ram, currentLine);
         } else {
             std::cout << "Invalid Instruction" << std::endl;
-            exit(1);
+//            exit(1);
+            goto nxt;
         }
 
+
         currentInstruction->exec();
+        nxt:
 
         this->PC++;
 
