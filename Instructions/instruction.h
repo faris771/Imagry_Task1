@@ -8,8 +8,8 @@
 #include <string>
 #include <memory>
 #include <vector>
-#include "memory.h"
-#include "CPU.h"
+#include "../Memory/memory.h"
+#include "../CPU/CPU.h"
 
 
 class Instruction {

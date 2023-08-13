@@ -9,15 +9,15 @@
 #include <vector>
 #include <string>
 #include <sstream>
-#include "instruction.h"
-#include "ROM.h"
-#include "RAM.h"
-#include "Print.h"
-#include "Add.h"
-#include "Jump.h"
-#include "Add_I.h"
-#include "Exit.h"
-#include "SetMemory.h"
+#include "../Instructions/instruction.h"
+#include "../Memory/ROM.h"
+#include "../Memory/RAM.h"
+#include "../Instructions/Print.h"
+#include "../Instructions/Add.h"
+#include "../Instructions/Jump.h"
+#include "../Instructions/Add_I.h"
+#include "../Instructions/Exit.h"
+#include "../Instructions/SetMemory.h"
 
 #define  RAM_SIZE 15
 #define  ROM_SIZE 10

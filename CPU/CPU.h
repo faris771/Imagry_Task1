@@ -6,8 +6,8 @@
 #include <memory>
 #include <fstream>
 
-#include "RAM.h"
-#include "ROM.h"
+#include "../Memory/RAM.h"
+#include "../Memory/ROM.h"
 
 
 class CPU {

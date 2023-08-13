@@ -3,6 +3,6 @@
 //
 #include <bits/stdc++.h>
 #include "memory"
-#include "instruction.h"
-#include "memory.h"
+#include "Instructions/instruction.h"
+#include "Memory/memory.h"
 

@@ -6,6 +6,6 @@
 
 void Exit::exec() {
 
-    abort();
+    exit(1);
 
 }

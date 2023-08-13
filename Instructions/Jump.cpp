@@ -3,7 +3,7 @@
 //
 
 #include "Jump.h"
-#include "CPU.h"
+#include "../CPU/CPU.h"
 
 
 void Jump::exec() {
