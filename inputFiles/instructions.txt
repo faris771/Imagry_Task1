@@ -2,6 +2,7 @@ set 5 10
 print 5
 set 2 16
 add 2 5 2
+JUMP 18
 print 2
 add 5 2 1
 print 1
