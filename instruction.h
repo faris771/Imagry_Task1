@@ -23,7 +23,7 @@ public:
 
     Instruction(std::shared_ptr<RAM> ram, std::string instructionString);
     std::vector<std::string> instructionVector;
-    std::shared_ptr<RAM> ram = std::make_shared<RAM>();
+    std::shared_ptr<RAM> ram;
 
     virtual void exec();
 

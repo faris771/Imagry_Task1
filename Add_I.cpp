@@ -8,19 +8,23 @@
 
 
 void Add_I::exec() {
+
+    // add 3 2 1
     // ADD addr0  imm addr1
 
-    int address0Val = stoi(this->ram->getIndexValue(std::stoi(this->instructionVector[0])));
-    int immediateVal = stoi(this->instructionVector[1]);
-    int address2 = stoi(this->instructionVector[2]);
-
-    this->ram->setValueToIndex(std::to_string(address0Val + immediateVal), address2);
+    std::string instructionString1 = this->instructionVector[1];
+    std::string instructionString2 = this->instructionVector[2];
+    std::string instructionString3 = this->instructionVector[3];
 
 
+    int address1Val = stoi(this->ram->getIndexValue(std::stoi(instructionString1)));
+
+    int immediateVal = stoi(instructionString2);
+    int address3 = (stoi(instructionString3));
+    int sum = address1Val + immediateVal;
 
 
-
-
+    this->ram->setValueToIndex(std::to_string(sum), address3);
 
 
 }

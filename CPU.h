@@ -20,15 +20,8 @@ private:
 
 public:
 
-
-    CPU(std::shared_ptr<RAM> ram, std::shared_ptr<ROM> rom, int PC);
-
     void fetchData();
-
     void run();
-
-
-
 
     friend class Jump;
 

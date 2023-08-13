@@ -24,7 +24,8 @@ public:
 
     Memory(int memorySize, std::vector<std::string> memoryVector);
     std::string getIndexValue(int index);
-    int getMemorySize() const { return memorySize; };
+
+    int getMemorySize() const;
 
 
 

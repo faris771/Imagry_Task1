@@ -1,0 +1,13 @@
+set 5 10
+print 5
+print 2
+add 3 2 1
+print 3
+addi 3 2 2
+print 2
+jump 9
+print 3
+print 3
+print 3
+print 5
+exit

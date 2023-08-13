@@ -4,13 +4,14 @@
 #include "CPU.h"
 #include <fstream>
 #include <iostream>
-#include "instruction.h"
-#include "memory.h"
-#include "ROM.h"
-#include "RAM.h"
+#include <algorithm>
 #include <memory>
 #include <vector>
 #include <string>
+#include <sstream>
+#include "instruction.h"
+#include "ROM.h"
+#include "RAM.h"
 #include "Print.h"
 #include "Add.h"
 #include "Jump.h"
@@ -18,36 +19,32 @@
 #include "Exit.h"
 #include "SetMemory.h"
 
-
 #define  RAM_SIZE 15
 #define  ROM_SIZE 10
 
 
-CPU::CPU(std::shared_ptr<RAM> ram, std::shared_ptr<ROM> rom, int PC) : ram(ram), rom(rom) {
-
-    this->PC = 0;
-
-
-}
 
 void CPU::fetchData() {
 
     std::string currentInstruction;
-    std::ifstream instructionsReadFile("instructions.txt");
     std::vector<std::string> fileContents;
+    this->PC = 0;
 
-
-    while (getline(instructionsReadFile, currentInstruction)) {
-        fileContents.emplace_back(currentInstruction);
-
+    std::ifstream instructionsReadFile("/home/faris/CLionProjects/CPU/instructions.txt");
+    if (!instructionsReadFile.is_open()) {
+        std::cout << "Error opening file" << std::endl;
+        exit(1);
     }
 
+    while (std::getline(instructionsReadFile, currentInstruction)) {
+        fileContents.emplace_back(currentInstruction);
+//        std::cout << currentInstruction << std::endl;
+    }
     instructionsReadFile.close();
     std::vector<std::string> RAM_Data = {"0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0"};
 
-    this->rom = std::make_shared<ROM>(ROM_SIZE, fileContents);
+    this->rom = std::make_shared<ROM>(fileContents.size(), fileContents);
     this->ram = std::make_shared<RAM>(RAM_SIZE, RAM_Data);
-
 
 }
 
@@ -58,42 +55,47 @@ void CPU::run() {
 
     std::shared_ptr<Instruction> currentInstruction;
 
-    for (int i = 0; i < ROM_SIZE; ++i) {
+    for (int i = 0; i < this->rom->getMemorySize(); ++i) {
 
         std::string currentLine = rom->getIndexValue(i);
-        currentInstruction = std::make_shared<Instruction>(ram, currentLine);
-        std::string instructionName = currentInstruction->instructionVector[0];
+//        currentInstruction = std::make_shared<Instruction>(ram, currentLine);
+        std::string instructionName = currentLine.substr(0, currentLine.find(' '));
+        std::transform(instructionName.begin(), instructionName.end(), instructionName.begin(), ::toupper);
+        std::cout << instructionName << std::endl;
+
 
 
         if (instructionName == "PRINT") {
-            currentInstruction = std::dynamic_pointer_cast<Print>(currentInstruction);
+            currentInstruction = std::make_shared<Print>(ram, currentLine);
+            std::cout << "Casting" << std::endl;
 
         } else if (instructionName == "ADD") {
-            currentInstruction = std::dynamic_pointer_cast<Add>(currentInstruction);
+            currentInstruction = std::make_shared<Add>(ram, currentLine);
 
-        } else if (instructionName == "ADD_I") {
-            currentInstruction = std::dynamic_pointer_cast<Add_I>(currentInstruction);
+        } else if (instructionName == "ADDI") {
+            currentInstruction = std::make_shared<Add_I>(ram, currentLine);
 
         } else if (instructionName == "JUMP") {
-//            currentInstruction = std::dynamic_pointer_cast<Jump>(currentInstruction);
+            currentInstruction = std::make_shared<Jump>(ram, currentLine);
 
         } else if (instructionName == "EXIT") {
-            currentInstruction = std::dynamic_pointer_cast<Exit>(currentInstruction);
+            currentInstruction = std::make_shared<Exit>(ram, currentLine);
 
         } else if (instructionName == "SET") {
-            currentInstruction = std::dynamic_pointer_cast<SetMemory>(currentInstruction);
+            currentInstruction = std::make_shared<SetMemory>(ram, currentLine);
 
         } else {
             std::cout << "Invalid Instruction" << std::endl;
             exit(1);
         }
 
-
         currentInstruction->exec();
+
         this->PC++;
 
 
     }
+
 
 
 }

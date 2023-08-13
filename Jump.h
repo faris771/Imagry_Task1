@@ -4,11 +4,13 @@
 #pragma once
 
 
+#include "instruction.h"
 
-class Jump{
+class Jump: public Instruction{
 
 public:
-
+    Jump(std::shared_ptr<RAM> ram,
+         std::string instructionString) : Instruction(ram, instructionString) {}
     void exec();
 
 

@@ -1,6 +1,14 @@
 #include <iostream>
+#include "CPU.h"
+
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+
+
+    CPU cpu;
+    cpu.run();
+
     return 0;
+
+
 }

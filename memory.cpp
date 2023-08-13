@@ -23,3 +23,8 @@ std::string Memory::getIndexValue(int index) {
 
     return this->memoryVector[index];
 }
+
+int Memory::getMemorySize() const {
+
+    return this->memorySize;
+}

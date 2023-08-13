@@ -7,18 +7,19 @@
 #define DELIMITER ' '
 
 
-Instruction::Instruction( std::shared_ptr<RAM> ram,
-                         std::string instructionString) //  ADD 1 2 3
-        :  instructionString(instructionString) {
 
+
+Instruction::Instruction( std::shared_ptr<RAM> ram,
+                         std::string instructionString){ //  ADD 1 2 3{
+
+    this->instructionString = instructionString;
     this->ram = ram;
     this->instructionVector = separateInstruction(instructionString);
 
 
 }
 
-
-std::vector<std::string> separateInstruction(std::string instructionString) {
+std::vector<std::string> Instruction::separateInstruction(std::string instructionString) {
 
     std::stringstream ss(instructionString);
     std::vector<std::string> instructionVector;
@@ -36,3 +37,8 @@ std::vector<std::string> separateInstruction(std::string instructionString) {
     return instructionVector;
 
 }
+
+void Instruction::exec() {
+
+}
+
