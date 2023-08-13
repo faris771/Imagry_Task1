@@ -61,13 +61,12 @@ void CPU::run() {
 //        currentInstruction = std::make_shared<Instruction>(ram, currentLine);
         std::string instructionName = currentLine.substr(0, currentLine.find(' '));
         std::transform(instructionName.begin(), instructionName.end(), instructionName.begin(), ::toupper);
-        std::cout << instructionName << std::endl;
+//        std::cout << instructionName << std::endl;
 
 
 
         if (instructionName == "PRINT") {
             currentInstruction = std::make_shared<Print>(ram, currentLine);
-            std::cout << "Casting" << std::endl;
 
         } else if (instructionName == "ADD") {
             currentInstruction = std::make_shared<Add>(ram, currentLine);

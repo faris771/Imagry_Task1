@@ -13,7 +13,6 @@ void Add::exec() {
     std::string instructionString2 = this->instructionVector[2];
     std::string instructionString3 = this->instructionVector[3];
 
-
     int address1Val = stoi(this->ram->getIndexValue(std::stoi(instructionString1)));
 
     int address2Val = stoi(this->ram->getIndexValue(std::stoi(instructionString2)));
@@ -21,6 +20,7 @@ void Add::exec() {
     int address3 = stoi(instructionString3);
 
     int sum = address1Val + address2Val;
+
     this->ram->setValueToIndex(std::to_string(sum), address3);
 
 

@@ -6,6 +6,5 @@
 
 void SetMemory::exec() {
 
-    this->ram->setValueToIndex(this->instructionVector[1], std::stoi(this->instructionVector[2]));
-
+    this->ram->setValueToIndex(this->instructionVector[2], std::stoi(this->instructionVector[1]));
 }
