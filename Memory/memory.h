@@ -23,8 +23,8 @@ protected:
 public:
 
     Memory(int memorySize, std::vector<std::string> memoryVector);
-    std::string getIndexValue(int index);
 
+    std::string getIndexValue(int index);
     int getMemorySize() const;
 
 

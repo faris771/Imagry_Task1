@@ -7,4 +7,5 @@
 void SetMemory::exec() {
 
     this->ram->setValueToIndex(this->instructionVector[2], std::stoi(this->instructionVector[1]));
+
 }

@@ -9,7 +9,8 @@
 
 void Add::exec() {
     // ADD adr0 ddr1  adr
-    std::string instructionString1 = this->instructionVector[1];
+
+    std::string instructionString1 = this->instructionVector[1]; // rename variables
     std::string instructionString2 = this->instructionVector[2];
     std::string instructionString3 = this->instructionVector[3];
 

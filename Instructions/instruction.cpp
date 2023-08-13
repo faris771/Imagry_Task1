@@ -38,7 +38,4 @@ std::vector<std::string> Instruction::separateInstruction(std::string instructio
 
 }
 
-void Instruction::exec() {
-
-}
 

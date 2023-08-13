@@ -17,15 +17,18 @@ class Instruction {
 private:
 
     std::vector<std::string> separateInstruction(std::string instructionString);
+
     std::string instructionString;
 
+    // print 5   ['print', '5']
 public:
 
     Instruction(std::shared_ptr<RAM> ram, std::string instructionString);
+
     std::vector<std::string> instructionVector;
     std::shared_ptr<RAM> ram;
 
-    virtual void exec();
+    virtual void exec() = 0;
 
 
 };
