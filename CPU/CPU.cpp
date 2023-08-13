@@ -30,7 +30,7 @@ void CPU::fetchData() {
     std::vector<std::string> fileContents;
     this->PC = 0;
 
-    std::ifstream instructionsReadFile("/home/faris/CLionProjects/CPU/instructions.txt");
+    std::ifstream instructionsReadFile("../inputFiles/instructions.txt");
     if (!instructionsReadFile.is_open()) {
         std::cout << "Error opening file" << std::endl;
         exit(1);
@@ -59,11 +59,8 @@ void CPU::run() {
 
 
         std::string currentLine = rom->getIndexValue(PC);
-//        currentInstruction = std::make_shared<Instruction>(ram, currentLine);
         std::string instructionName = currentLine.substr(0, currentLine.find(' '));
         std::transform(instructionName.begin(), instructionName.end(), instructionName.begin(), ::toupper);
-//        std::cout << instructionName << std::endl;
-
 
 
         if (instructionName == "PRINT") {
@@ -90,7 +87,6 @@ void CPU::run() {
         }
 
         currentInstruction->exec();
-        std::cout << "CPU PC = " << this->PC << std::endl;
 
         this->PC++;
 

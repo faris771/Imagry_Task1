@@ -9,13 +9,11 @@
 void Jump::exec() {
 
 //    this->pc = pc;
-    std::cout << "pc = " << pc_ << std::endl;
 
-
-    int new_pc = stoi(this->instructionVector[1]) - 1;
+    std::cout << "Jumping to " << this->instructionVector[1] << std::endl;
+    int new_pc = stoi(this->instructionVector[1]) - 2;
     this->pc_ = new_pc;
 
-    std::cout << "pc = " << pc_ << std::endl;
 
 
 }
