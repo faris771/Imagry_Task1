@@ -57,7 +57,8 @@ void CPU::run() {
 
     for (int i = 0; i < this->rom->getMemorySize(); ++i) {
 
-        std::string currentLine = rom->getIndexValue(i);
+
+        std::string currentLine = rom->getIndexValue(PC);
 //        currentInstruction = std::make_shared<Instruction>(ram, currentLine);
         std::string instructionName = currentLine.substr(0, currentLine.find(' '));
         std::transform(instructionName.begin(), instructionName.end(), instructionName.begin(), ::toupper);
@@ -75,7 +76,7 @@ void CPU::run() {
             currentInstruction = std::make_shared<Add_I>(ram, currentLine);
 
         } else if (instructionName == "JUMP") {
-            currentInstruction = std::make_shared<Jump>(ram, currentLine);
+            currentInstruction = std::make_shared<Jump>(ram, currentLine, PC);
 
         } else if (instructionName == "EXIT") {
             currentInstruction = std::make_shared<Exit>(ram, currentLine);
@@ -89,6 +90,7 @@ void CPU::run() {
         }
 
         currentInstruction->exec();
+        std::cout << "CPU PC = " << this->PC << std::endl;
 
         this->PC++;
 

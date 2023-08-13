@@ -3,6 +3,7 @@ print 5
 print 2
 add 5 2 1
 print 1
+JUMP 14
 addi 3 2 2
 print 2
 jump 9
