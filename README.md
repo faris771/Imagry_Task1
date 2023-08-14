@@ -1,7 +1,7 @@
 # Imagry_Task1
 
 ## About this project
-Task1 in my software engineering internship at [Imagry](https://github.com/imagry), the Idea of this task is to get hand on C++ Language, and designing concepts.
+Task1 in my software engineering internship at [Imagry](https://github.com/imagry), the Idea of this task is to get hands on C++ Language, and designing concepts.
 In this task, we are required to build a project in C++ so that we read a specific sequence of instructions from a text file and store them in ROM (it can only be written to once to store the instructions) and then deal with the instructions separately and execute them as required including This involves storing values in memory and reading from them.
 With emphasis on taking into account Clean and Maintainable Code.
 
