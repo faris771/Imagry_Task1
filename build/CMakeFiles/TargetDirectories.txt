@@ -1,3 +1,0 @@
-/home/faris/CLionProjects/Imagry_Task1/build/CMakeFiles/CPU.dir
-/home/faris/CLionProjects/Imagry_Task1/build/CMakeFiles/edit_cache.dir
-/home/faris/CLionProjects/Imagry_Task1/build/CMakeFiles/rebuild_cache.dir
