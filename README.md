@@ -7,12 +7,13 @@ With emphasis on taking into account Clean and Maintainable Code.
 
 ## Project Description
 we have a set of instructions in the Assembly language as follows:
-1. set address value -> Store the value at the specified address
-2. add  address1 address2 address3 -> address3 value = address1 value + address2  value .
-3. addi address1 value address2 -> address2 value = address1 value +   imm value .
-4. jump address -> go to the specified address
-5.exit -. exit the program
-6. print address -> print the content that store in this memory address
+
+* **SET** address value -> Store the value at the specified address
+* **ADD**  address1 address2 address3 -> address3 value = address1 value + address2  value .
+* **ADDI** address1 value address2 -> address2 value = address1 value +   imm value .
+* **JUMP** address -> go to the specified address
+* **EXIT**  exit the program
+* **PRINT** address -> print the content that store in this memory address
 
 
 
