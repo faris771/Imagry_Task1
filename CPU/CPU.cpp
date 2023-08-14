@@ -29,7 +29,7 @@ void CPU::fetchData() {
     std::vector<std::string> fileContents;
     this->PC = 0;
 
-    std::ifstream instructionsReadFile("../inputFiles/instructions.txt");
+    std::ifstream instructionsReadFile("inputFiles/instructions.txt");
     if (!instructionsReadFile.is_open()) {
         std::cout << "Error opening file" << std::endl;
         exit(1);
@@ -99,35 +99,3 @@ void CPU::run() {
 
     }
 }
-
-
-//}
-//
-//std::shared_ptr<Instruction> CPU::parseInstruction(std::string currentLine) {
-//    std::string instructionName = currentLine.substr(0, currentLine.find(' '));
-//    std::transform(instructionName.begin(), instructionName.end(), instructionName.begin(), ::toupper);
-//
-//    std::shared_ptr<Instruction> currentInstruction;
-//    if (instructionName == "PRINT") {
-//        currentInstruction = std::make_shared<Print>(ram, currentLine);
-//
-//    } else if (instructionName == "ADD") {
-//        currentInstruction = std::make_shared<Add>(ram, currentLine);
-//
-//    } else if (instructionName == "ADDI") {
-//        currentInstruction = std::make_shared<Add_I>(ram, currentLine);
-//
-//    } else if (instructionName == "JUMP") {
-//        currentInstruction = std::make_shared<Jump>(ram, currentLine, PC);
-//
-//    } else if (instructionName == "EXIT") {
-//        currentInstruction = std::make_shared<Exit>(ram, currentLine);
-//
-//    } else if (instructionName == "SET") {
-//        currentInstruction = std::make_shared<SetMemory>(ram, currentLine);
-//    } else {
-//        std::cout << "Invalid Instruction" << std::endl;
-//
-//    }
-//    return currentInstruction;
-//}
