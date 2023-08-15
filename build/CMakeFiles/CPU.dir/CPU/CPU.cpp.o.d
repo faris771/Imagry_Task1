@@ -197,4 +197,5 @@ CMakeFiles/CPU.dir/CPU/CPU.cpp.o: \
  /home/faris/CLionProjects/Imagry_Task1/CPU/../Instructions/Jump.h \
  /home/faris/CLionProjects/Imagry_Task1/CPU/../Instructions/Add_I.h \
  /home/faris/CLionProjects/Imagry_Task1/CPU/../Instructions/Exit.h \
- /home/faris/CLionProjects/Imagry_Task1/CPU/../Instructions/SetMemory.h
+ /home/faris/CLionProjects/Imagry_Task1/CPU/../Instructions/SetMemory.h \
+ /home/faris/CLionProjects/Imagry_Task1/CPU/../Instructions/InstructionFactory.h

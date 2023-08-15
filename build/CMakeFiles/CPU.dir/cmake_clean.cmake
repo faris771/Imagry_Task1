@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/CPU.dir/Instructions/Add_I.cpp.o.d"
   "CMakeFiles/CPU.dir/Instructions/Exit.cpp.o"
   "CMakeFiles/CPU.dir/Instructions/Exit.cpp.o.d"
+  "CMakeFiles/CPU.dir/Instructions/InstructionFactory.cpp.o"
+  "CMakeFiles/CPU.dir/Instructions/InstructionFactory.cpp.o.d"
   "CMakeFiles/CPU.dir/Instructions/Jump.cpp.o"
   "CMakeFiles/CPU.dir/Instructions/Jump.cpp.o.d"
   "CMakeFiles/CPU.dir/Instructions/Print.cpp.o"

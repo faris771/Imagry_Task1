@@ -225,6 +225,30 @@ Instructions/Exit.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPU.dir/build.make CMakeFiles/CPU.dir/Instructions/Exit.cpp.s
 .PHONY : Instructions/Exit.cpp.s
 
+Instructions/InstructionFactory.o: Instructions/InstructionFactory.cpp.o
+.PHONY : Instructions/InstructionFactory.o
+
+# target to build an object file
+Instructions/InstructionFactory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPU.dir/build.make CMakeFiles/CPU.dir/Instructions/InstructionFactory.cpp.o
+.PHONY : Instructions/InstructionFactory.cpp.o
+
+Instructions/InstructionFactory.i: Instructions/InstructionFactory.cpp.i
+.PHONY : Instructions/InstructionFactory.i
+
+# target to preprocess a source file
+Instructions/InstructionFactory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPU.dir/build.make CMakeFiles/CPU.dir/Instructions/InstructionFactory.cpp.i
+.PHONY : Instructions/InstructionFactory.cpp.i
+
+Instructions/InstructionFactory.s: Instructions/InstructionFactory.cpp.s
+.PHONY : Instructions/InstructionFactory.s
+
+# target to generate assembly for a file
+Instructions/InstructionFactory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPU.dir/build.make CMakeFiles/CPU.dir/Instructions/InstructionFactory.cpp.s
+.PHONY : Instructions/InstructionFactory.cpp.s
+
 Instructions/Jump.o: Instructions/Jump.cpp.o
 .PHONY : Instructions/Jump.o
 
@@ -438,6 +462,9 @@ help:
 	@echo "... Instructions/Exit.o"
 	@echo "... Instructions/Exit.i"
 	@echo "... Instructions/Exit.s"
+	@echo "... Instructions/InstructionFactory.o"
+	@echo "... Instructions/InstructionFactory.i"
+	@echo "... Instructions/InstructionFactory.s"
 	@echo "... Instructions/Jump.o"
 	@echo "... Instructions/Jump.i"
 	@echo "... Instructions/Jump.s"

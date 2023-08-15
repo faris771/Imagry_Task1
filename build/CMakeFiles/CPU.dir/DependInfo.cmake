@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/faris/CLionProjects/Imagry_Task1/Instructions/Add.cpp" "CMakeFiles/CPU.dir/Instructions/Add.cpp.o" "gcc" "CMakeFiles/CPU.dir/Instructions/Add.cpp.o.d"
   "/home/faris/CLionProjects/Imagry_Task1/Instructions/Add_I.cpp" "CMakeFiles/CPU.dir/Instructions/Add_I.cpp.o" "gcc" "CMakeFiles/CPU.dir/Instructions/Add_I.cpp.o.d"
   "/home/faris/CLionProjects/Imagry_Task1/Instructions/Exit.cpp" "CMakeFiles/CPU.dir/Instructions/Exit.cpp.o" "gcc" "CMakeFiles/CPU.dir/Instructions/Exit.cpp.o.d"
+  "/home/faris/CLionProjects/Imagry_Task1/Instructions/InstructionFactory.cpp" "CMakeFiles/CPU.dir/Instructions/InstructionFactory.cpp.o" "gcc" "CMakeFiles/CPU.dir/Instructions/InstructionFactory.cpp.o.d"
   "/home/faris/CLionProjects/Imagry_Task1/Instructions/Jump.cpp" "CMakeFiles/CPU.dir/Instructions/Jump.cpp.o" "gcc" "CMakeFiles/CPU.dir/Instructions/Jump.cpp.o.d"
   "/home/faris/CLionProjects/Imagry_Task1/Instructions/Print.cpp" "CMakeFiles/CPU.dir/Instructions/Print.cpp.o" "gcc" "CMakeFiles/CPU.dir/Instructions/Print.cpp.o.d"
   "/home/faris/CLionProjects/Imagry_Task1/Instructions/SetMemory.cpp" "CMakeFiles/CPU.dir/Instructions/SetMemory.cpp.o" "gcc" "CMakeFiles/CPU.dir/Instructions/SetMemory.cpp.o.d"

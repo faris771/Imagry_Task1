@@ -26,4 +26,6 @@ add_executable(CPU main.cpp
         Instructions/Exit.h
         Instructions/Print.cpp
         Instructions/Print.h
+        Instructions/InstructionFactory.cpp
+        Instructions/InstructionFactory.h
 )
