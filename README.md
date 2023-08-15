@@ -36,7 +36,10 @@ sudo snap install cmake --classic
 After installing Cmake:
 
 ```bash
-cmake -B build -H .
-cmake --build build --target all
+mkdir build
+cd build
+cmake ..
+make
+./Faris
 ./build/CPU
 ```
