@@ -33,10 +33,14 @@ Make sure Cmake is installed on your machine:
 ```bash
 sudo snap install cmake --classic
 ```
-After installing Cmake:
 
+
+After installing Cmake:
 ```bash
 mkdir build
+
+```
+```bash
 cd build
 cmake ..
 make
