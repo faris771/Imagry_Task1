@@ -30,7 +30,7 @@ void CPU::fetchData() {
     std::vector<std::string> fileContents;
     this->PC = 0;
 
-    std::ifstream instructionsReadFile("inputFiles/instructions.txt");
+    std::ifstream instructionsReadFile("../inputFiles/instructions.txt");
     if (!instructionsReadFile.is_open()) {
         std::cout << "Error opening file" << std::endl;
         exit(1);

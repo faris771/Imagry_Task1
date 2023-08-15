@@ -3,7 +3,7 @@ project(CPU)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(CPU main.cpp
+add_executable(Faris main.cpp
         Memory/memory.h
         Memory/RAM.h
         Memory/ROM.h
