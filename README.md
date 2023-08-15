@@ -41,5 +41,5 @@ cd build
 cmake ..
 make
 ./Faris
-./build/CPU
+
 ```
